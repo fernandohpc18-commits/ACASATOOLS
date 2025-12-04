@@ -1,0 +1,9 @@
+﻿fastapi
+uvicorn[standard]
+pydantic
+SQLAlchemy
+asyncpg
+alembic
+python-dotenv
+redis
+httpx

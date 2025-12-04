@@ -1,0 +1,54 @@
+﻿version: "3.9"
+
+services:
+  acasa-backend:
+    build: ./backend
+    container_name: acasa-backend
+    env_file:
+      - .env
+    depends_on:
+      - acasa-db
+      - acasa-redis
+    ports:
+      - "8000:8000"
+    networks:
+      - acasa-net
+
+  acasa-frontend:
+    build: ./frontend
+    container_name: acasa-frontend
+    depends_on:
+      - acasa-backend
+    ports:
+      - "3000:80"
+    networks:
+      - acasa-net
+
+  acasa-db:
+    image: timescale/timescaledb-ha:pg16
+    container_name: acasa-db
+    environment:
+      POSTGRES_DB: acasa
+      POSTGRES_USER: acasa
+      POSTGRES_PASSWORD: acasa
+    volumes:
+      - acasa-db-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - acasa-net
+
+  acasa-redis:
+    image: redis:7-alpine
+    container_name: acasa-redis
+    ports:
+      - "6379:6379"
+    networks:
+      - acasa-net
+
+networks:
+  acasa-net:
+    driver: bridge
+
+volumes:
+  acasa-db-data:
