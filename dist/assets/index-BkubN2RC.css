@@ -1,0 +1,1 @@
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,system-ui,Avenir,Helvetica,Arial,sans-serif;background-color:#0f172a;color:#e5e7eb}a{text-decoration:none;color:inherit}.container{max-width:1200px;margin:0 auto;padding:2rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
