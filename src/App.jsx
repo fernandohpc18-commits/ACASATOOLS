@@ -1,10 +1,8 @@
-﻿import Layout from './Layout'
-import Dashboard from '../pages/Dashboard'
-
-export default function App() {
+﻿export default function App() {
   return (
-    <Layout>
-      <Dashboard />
-    </Layout>
+    <div style={{ padding: 20 }}>
+      <h1>ACASATOOLS</h1>
+      <p>Mais do que trading, Ã© a sua casa.</p>
+    </div>
   )
 }
