@@ -1,0 +1,8 @@
+﻿[
+  { "id": "t1", "data": "2026-01-01", "ativo": "AAPL", "tipo": "compra", "quantidade": 10, "preco_entrada": 150, "preco_saida": 155, "resultado": 50 },
+  { "id": "t2", "data": "2026-01-02", "ativo": "BTCUSD", "tipo": "venda", "quantidade": 0.01, "preco_entrada": 40000, "preco_saida": 39500, "resultado": -100 },
+  { "id": "t3", "data": "2026-01-03", "ativo": "AAPL", "tipo": "compra", "quantidade": 5, "preco_entrada": 152, "preco_saida": 158, "resultado": 30 },
+  { "id": "t4", "data": "2026-01-04", "ativo": "TSLA", "tipo": "compra", "quantidade": 2, "preco_entrada": 700, "preco_saida": 680, "resultado": -40 },
+  { "id": "t5", "data": "2026-01-05", "ativo": "ETHUSD", "tipo": "compra", "quantidade": 0.2, "preco_entrada": 3000, "preco_saida": 3050, "resultado": 10 },
+  { "id": "t6", "data": "2026-01-06", "ativo": "AAPL", "tipo": "venda", "quantidade": 3, "preco_entrada": 160, "preco_saida": 157, "resultado": -9 }
+]
