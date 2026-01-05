@@ -1,7 +1,7 @@
-﻿import React from 'react'
-import sampleTrades from '../data/sampleTrades.json'
-import TradeMetrics from '../components/trades/TradeMetrics'
-import TradeCharts from '../components/trades/TradeCharts'
+﻿import React from "react"
+import sampleTrades from "../data/sampleTrades.json"
+import TradeMetrics from "../components/trades/TradeMetrics"
+import TradeCharts from "../components/trades/TradeCharts"
 
 export default function TradeMonitor() {
   return (

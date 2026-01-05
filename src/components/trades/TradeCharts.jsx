@@ -1,8 +1,8 @@
-﻿import React from 'react'
+﻿import React from "react"
 
 function SimpleBar({ value, max }) {
   const pct = max ? Math.max(2, Math.round((Math.abs(value) / max) * 100)) : 2
-  const color = value >= 0 ? 'bg-emerald-500' : 'bg-rose-500'
+  const color = value >= 0 ? "bg-emerald-500" : "bg-rose-500"
   return (
     <div className="flex items-center space-x-3">
       <div className="w-28 text-sm text-slate-600">{value >= 0 ? `+${value}` : value}</div>

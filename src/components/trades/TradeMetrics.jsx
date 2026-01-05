@@ -1,7 +1,7 @@
-﻿import React, { useMemo } from 'react'
+﻿import React, { useMemo } from "react"
 
 function formatUSD(v) {
-  return v.toLocaleString('en-US', { style: 'currency', currency: 'USD' })
+  return v.toLocaleString("en-US", { style: "currency", currency: "USD" })
 }
 
 export default function TradeMetrics({ trades }) {
@@ -30,13 +30,13 @@ export default function TradeMetrics({ trades }) {
 
       <div className="bg-white dark:bg-slate-800 p-4 rounded shadow">
         <div className="text-sm text-slate-500">Lucro / Prejuízo</div>
-        <div className={`text-xl font-bold ${metrics.profit >= 0 ? 'text-emerald-600' : 'text-rose-600'}`}>{formatUSD(metrics.profit)}</div>
+        <div className={`text-xl font-bold ${metrics.profit >= 0 ? "text-emerald-600" : "text-rose-600"}`}>{formatUSD(metrics.profit)}</div>
       </div>
 
       <div className="bg-white dark:bg-slate-800 p-4 rounded shadow">
         <div className="text-sm text-slate-500">Melhor / Pior</div>
-        <div className="text-sm mt-1">{metrics.best ? `${metrics.best.ativo} ${formatUSD(metrics.best.resultado)}` : '—'}</div>
-        <div className="text-sm mt-1">{metrics.worst ? `${metrics.worst.ativo} ${formatUSD(metrics.worst.resultado)}` : '—'}</div>
+        <div className="text-sm mt-1">{metrics.best ? `${metrics.best.ativo} ${formatUSD(metrics.best.resultado)}` : "—"}</div>
+        <div className="text-sm mt-1">{metrics.worst ? `${metrics.worst.ativo} ${formatUSD(metrics.worst.resultado)}` : "—"}</div>
       </div>
     </div>
   )

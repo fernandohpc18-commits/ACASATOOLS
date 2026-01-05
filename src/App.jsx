@@ -1,7 +1,7 @@
-﻿import React from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
-import Dashboard from './pages/Dashboard'
-import TradeMonitor from './pages/TradeMonitor'
+﻿import React from "react"
+import { Routes, Route, Link } from "react-router-dom"
+import Dashboard from "./pages/Dashboard"
+import TradeMonitor from "./pages/TradeMonitor"
 
 export default function App() {
   return (
