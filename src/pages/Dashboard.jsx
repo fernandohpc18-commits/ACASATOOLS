@@ -23,6 +23,18 @@ export default function Dashboard() {
           </div>
         ))}
       </section>
+
+      <section className="mt-8">
+        <h3 className="text-lg font-semibold mb-2">Resumo</h3>
+        <div className="bg-white dark:bg-slate-800 p-4 rounded-md shadow">
+          <p>Funcionalidades iniciais incluídas:</p>
+          <ul className="list-disc ml-6 mt-2">
+            <li>Listagem básica de PropFirms</li>
+            <li>Rota / Dashboard e /trades (Trade Monitor)</li>
+            <li>Componentes de métricas e gráficos (exemplo)</li>
+          </ul>
+        </div>
+      </section>
     </div>
   )
 }
